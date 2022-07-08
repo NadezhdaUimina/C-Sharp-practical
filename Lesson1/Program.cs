@@ -33,9 +33,25 @@ Console.Write("max=" + max);*/
 
 
 
-//программа, которая на вход принимает число и выдаёт, является ли число чётным (делится ли оно на два без остатка)
+/*//программа, которая на вход принимает число и выдаёт, является ли число чётным (делится ли оно на два без остатка)
 
 Console.Write("Введите число: ");
 int num = Convert.ToInt32(Console.ReadLine());
 if (num % 2 == 0) Console.Write("число является четным");
-else Console.Write("число является нечетным");
+else Console.Write("число является нечетным");*/
+
+
+
+//программа, которая на вход принимает число (N), а на выходе показывает все чётные числа от 1 до N
+
+
+Console.Write("Введите число: ");
+int num = Convert.ToInt32(Console.ReadLine());
+
+int current = 2;
+
+while (current <= num) 
+{
+    Console.Write(" " + current);
+    current = current + 2;
+}
