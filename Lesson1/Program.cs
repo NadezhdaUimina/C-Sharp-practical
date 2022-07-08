@@ -12,7 +12,7 @@ else
     Console.WriteLine("max=" + num2 + " min=" + num1);*/
 
 
-//программа, которая принимает на вход три числа и выдаёт максимальное из этих чисел
+/*//программа, которая принимает на вход три числа и выдаёт максимальное из этих чисел
 
 Console.Write("Введите первое число: ");
 int num1 = Convert.ToInt32(Console.ReadLine());
@@ -29,4 +29,13 @@ if (num1 > max) max = num1;
 if (num2 > max) max = num2;
 if (num3 > max) max = num3;
 
-Console.Write("max=" + max);
+Console.Write("max=" + max);*/
+
+
+
+//программа, которая на вход принимает число и выдаёт, является ли число чётным (делится ли оно на два без остатка)
+
+Console.Write("Введите число: ");
+int num = Convert.ToInt32(Console.ReadLine());
+if (num % 2 == 0) Console.Write("число является четным");
+else Console.Write("число является нечетным");
