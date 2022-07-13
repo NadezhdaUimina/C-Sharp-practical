@@ -46,7 +46,7 @@ MaximumNumber (number1, number2, number3);*/
 
 
 
-//программа, которая на вход принимает число и выдаёт, является ли число чётным (делится ли оно на два без остатка)
+/*//программа, которая на вход принимает число и выдаёт, является ли число чётным (делится ли оно на два без остатка)
 
 void AnEvenNumber (int num)
 {
@@ -55,21 +55,24 @@ void AnEvenNumber (int num)
 }
 Console.Write("Введите число: ");
 int number = Convert.ToInt32(Console.ReadLine());
-AnEvenNumber (number);
+AnEvenNumber (number);*/
 
 
 
 
-/*//программа, которая на вход принимает число (N), а на выходе показывает все чётные числа от 1 до N
+//программа, которая на вход принимает число (N), а на выходе показывает все чётные числа от 1 до N
 
-
-Console.Write("Введите число: ");
-int num = Convert.ToInt32(Console.ReadLine());
-
-int current = 2;
-
-while (current <= num) 
+void EvenNumbers (int num)
 {
-    Console.Write(" " + current);
-    current = current + 2;
-}*/
+    int current = 2;
+
+    while (current <= num) 
+    {
+        Console.Write($" {current}");
+        current = current + 2;
+    }
+}
+Console.Write("Введите число: ");
+int number = Convert.ToInt32(Console.ReadLine());
+EvenNumbers (number);
+
