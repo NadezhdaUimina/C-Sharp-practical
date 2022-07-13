@@ -24,7 +24,7 @@ int TheThirdDigit (int n)
         Console.Write($"Третья цифра данного числа {n}");
     }
     else Console.Write("Данное число не имеет третьей цифры");
-    return n;
+    return;
 }
 
 Console.Write("Введите число: ");
@@ -46,6 +46,7 @@ void DayOfTheWeek (int n)
         Console.WriteLine("Это выходной день. Урааааа!!!");
     }
     else Console.WriteLine("Такого дня недели не существует.");
+    return;
 }
 
 Console.Write("Введите день недели: ");
