@@ -1,15 +1,23 @@
-﻿/*//программа, которая на вход принимает два числа и выдаёт, какое число большее, а какое меньшее
+﻿//программа, которая на вход принимает два числа и выдаёт, какое число большее, а какое меньшее
+
+void MaxMinNumber (int num1, int num2)
+{
+    if(num1 > num2) 
+    {
+    Console.WriteLine("max=" + num1 + " min=" +num2);
+    }
+    else Console.WriteLine("max=" + num2 + " min=" + num1);
+}
 
 Console.Write("Введите первое число: ");
-int num1 = Convert.ToInt32(Console.ReadLine());
+int number1 = Convert.ToInt32(Console.ReadLine());
 
 Console.Write("Введите второе число: ");
-int num2 = Convert.ToInt32(Console.ReadLine());
+int number2 = Convert.ToInt32(Console.ReadLine());
 
-if(num1 > num2)
-    Console.WriteLine("max=" + num1 + " min=" + num2);
-else 
-    Console.WriteLine("max=" + num2 + " min=" + num1);*/
+MaxMinNumber (number1, number2);
+
+
 
 
 /*//программа, которая принимает на вход три числа и выдаёт максимальное из этих чисел
@@ -42,7 +50,7 @@ else Console.Write("число является нечетным");*/
 
 
 
-//программа, которая на вход принимает число (N), а на выходе показывает все чётные числа от 1 до N
+/*//программа, которая на вход принимает число (N), а на выходе показывает все чётные числа от 1 до N
 
 
 Console.Write("Введите число: ");
@@ -54,4 +62,4 @@ while (current <= num)
 {
     Console.Write(" " + current);
     current = current + 2;
-}
+}*/
