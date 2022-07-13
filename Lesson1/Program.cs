@@ -7,6 +7,7 @@ void MaxMinNumber (int num1, int num2)
     Console.WriteLine("max=" + num1 + " min=" +num2);
     }
     else Console.WriteLine("max=" + num2 + " min=" + num1);
+    return;
 }
 
 Console.Write("Введите первое число: ");
@@ -31,6 +32,7 @@ void MaximumNumber (int num1, int num2, int num3)
     if (num3 > max) max = num3;
     
     Console.Write($"max= {max}");
+    return;
 }
 
 Console.Write("Введите первое число: ");
@@ -52,6 +54,7 @@ void AnEvenNumber (int num)
 {
     if (num % 2 == 0) Console.Write("число является четным");
     else Console.Write("число является нечетным");
+    return;
 }
 Console.Write("Введите число: ");
 int number = Convert.ToInt32(Console.ReadLine());
@@ -71,6 +74,7 @@ void EvenNumbers (int num)
         Console.Write($" {current}");
         current = current + 2;
     }
+    return;
 }
 Console.Write("Введите число: ");
 int number = Convert.ToInt32(Console.ReadLine());
