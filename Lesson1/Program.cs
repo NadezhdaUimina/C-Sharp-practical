@@ -20,7 +20,7 @@ MaxMinNumber (number1, number2);*/
 
 
 
-//программа, которая принимает на вход три числа и выдаёт максимальное из этих чисел
+/*//программа, которая принимает на вход три числа и выдаёт максимальное из этих чисел
 
 void MaximumNumber (int num1, int num2, int num3)
 {
@@ -42,16 +42,21 @@ int number2 = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите третье число: ");
 int number3 = Convert.ToInt32(Console.ReadLine());
 
-MaximumNumber (number1, number2, number3);
+MaximumNumber (number1, number2, number3);*/
 
 
 
-/*//программа, которая на вход принимает число и выдаёт, является ли число чётным (делится ли оно на два без остатка)
+//программа, которая на вход принимает число и выдаёт, является ли число чётным (делится ли оно на два без остатка)
 
+void AnEvenNumber (int num)
+{
+    if (num % 2 == 0) Console.Write("число является четным");
+    else Console.Write("число является нечетным");
+}
 Console.Write("Введите число: ");
-int num = Convert.ToInt32(Console.ReadLine());
-if (num % 2 == 0) Console.Write("число является четным");
-else Console.Write("число является нечетным");*/
+int number = Convert.ToInt32(Console.ReadLine());
+AnEvenNumber (number);
+
 
 
 
