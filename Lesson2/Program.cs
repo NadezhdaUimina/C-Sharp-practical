@@ -14,12 +14,23 @@ Console.WriteLine($"Вторая цифра данного числа: {TheSecon
 
 int TheThirdDigit (int n)
 {
-    int number = n / 100 % 10;
-    return number;
+    if (n > 99) 
+    {
+        while (n > 1000) 
+        {
+            n = n / 10;
+        }
+        n = n % 10;
+        Console.Write($"Третья цифра данного числа {n}");
+    }
+    else Console.Write("Данное число не имеет третьей цифры");
+    return n;
 }
 
 Console.Write("Введите число: ");
 int num = Convert.ToInt32(Console.ReadLine());
+TheThirdDigit(num);
 
-if (TheThirdDigit(num) > 0) Console.WriteLine($"Третья цифра данного числа: {TheThirdDigit(num)}");
-    else Console.WriteLine("Третья цифра в данном числе отсутствует");
+
+
+
