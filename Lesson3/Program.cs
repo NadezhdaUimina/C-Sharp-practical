@@ -24,6 +24,7 @@ else Console.WriteLine("Данное число не является палин
 
 //программа, которая принимает на вход координаты двух точек и находит расстояние между ними в 3D пространстве
 
+/*
 double Lenth(double xa, double ya, double za, double xb, double yb, double zb)
 {
     double lenth = Math.Sqrt(Math.Pow((xb - xa), 2) + Math.Pow((yb - ya), 2) + Math.Pow((zb - za), 2));
@@ -43,3 +44,31 @@ Console.Write("Введите значение координаты Z точки
 int zb = Convert.ToInt32(Console.ReadLine());
 double lenth = Lenth(xa, ya, za, xb, yb, zb);
 Console.Write($"Расточние между точками А и В равно {lenth}");
+*/
+
+
+//программa, которая принимает на вход число (N) и выдаёт таблицу кубов чисел от 1 до N
+ 
+
+void Numbers(int num)
+{
+    double current = 1; 
+    if (num > 0)
+    {
+        while (current <= num)
+        {
+            Console.Write(Math.Pow(current, 3) + " ");
+            current++;
+        }
+    }
+    else {
+        while (current >= num)
+        {
+            Console.Write(Math.Pow(current, 3) + " ");
+            current--;
+        }
+    }
+}
+Console.Write("Введите число: ");
+int number = Convert.ToInt32(Console.ReadLine());
+Numbers(number);
