@@ -18,7 +18,7 @@ void ShowArray(int[] array)    //Вывод массива
 {
     for (int i = 0; i < array.Length; i++)
     {
-        Console.Write (array[i] + " ");
+        Console.Write(array[i] + " ");
     }
     Console.WriteLine();
 }
@@ -28,9 +28,9 @@ void ShowArray(int[] array)    //Вывод массива
 int Сounter(int[] array)  // поиск чётных чисел
 {
     int count = 0;
-    for(int i = 0; i < array.Length; i++)
+    for (int i = 0; i < array.Length; i++)
     {
-        if(array[i] % 2 == 0) count += 1;
+        if (array[i] % 2 == 0) count += 1;
     }
     return count;
 }
@@ -64,7 +64,7 @@ void ShowArray(double[] array)    //Вывод массива
 {
     for (int i = 0; i < array.Length; i++)
     {
-        Console.Write (array[i] + " ");
+        Console.Write(array[i] + " ");
     }
     Console.WriteLine();
 }
@@ -72,7 +72,7 @@ void ShowArray(double[] array)    //Вывод массива
 double SumOfElements(double[] array)  // сумма элементов на нечетных позициях
 {
     double sum = 0;
-    for(int i = 1; i < array.Length; i +=2)
+    for (int i = 1; i < array.Length; i += 2)
     {
         sum += array[i];
     }
@@ -107,7 +107,7 @@ void ShowArray(int[] array)    //Вывод массива
 {
     for (int i = 0; i < array.Length; i++)
     {
-        Console.Write (array[i] + " ");
+        Console.Write(array[i] + " ");
     }
     Console.WriteLine();
 }
@@ -119,10 +119,10 @@ int Difference(int[] array)  // поиск чётных чисел
     int max = array[0];
     int min = array[0];
     int count = 0;
-    for(int i = 0; i < array.Length; i++)
+    for (int i = 0; i < array.Length; i++)
     {
-        if(array[i] > max) max = array[i];
-        if(array[i] < min) min = array[i];
+        if (array[i] > max) max = array[i];
+        if (array[i] < min) min = array[i];
     }
     count = max - min;
     return count;
