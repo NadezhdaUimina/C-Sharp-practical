@@ -13,7 +13,7 @@ double[,] CreateRandom2dArray(int rows, int columns, double minValue, double max
     {
         for(int j = 0; j < columns; j++)
         {
-            newArray[i, j] = Math.Round(random.NextDouble()*20-10, 2);
+            newArray[i, j] = Math.Round(random.NextDouble()*20-10, 2);  //random() * (max - min) + min, min-max диапазон
             Console.Write(newArray[i, j]);   
             Console.Write(" ");
         }
