@@ -1,7 +1,7 @@
 ﻿// Задайте массив заполненный случайными положительными трёхзначными числами. 
 // Напишите программу, которая покажет количество чётных чисел в массиве.
 // [345, 897, 568, 234] -> 2
-
+/*
 
 int[] CreateRandomArray(int size, int minValue, int maxValue)  //Рандомный массив
 {
@@ -41,14 +41,14 @@ int[] binaryArray = CreateRandomArray(number, 100, 999);
 ShowArray(binaryArray);
 int result = Сounter(binaryArray);
 Console.Write($"В данном массиве {result} чётное(-ых) число(-а, -ел) ");
-
+*/
 
 
 // Задайте одномерный массив, заполненный случайными числами. Найдите сумму элементов, стоящих на нечётных позициях.
 // [3, 7, 23, 12] -> 19
 // [-4, -6, 89, 6] -> 0
 
-
+/*
 double[] CreateRandomArray(int size, int minValue, int maxValue)  //Рандомный массив
 {
     double[] newArray = new double[size];
@@ -86,7 +86,7 @@ double[] binaryArray = CreateRandomArray(number, -1000, 1000);
 ShowArray(binaryArray);
 double result = SumOfElements(binaryArray);
 Console.Write($"сумму элементов, стоящих на нечётных позициях равна: {result}");
-
+*/
 
 // Задайте массив вещественных чисел. Найдите разницу между максимальным и минимальным элементов массива.
 // [3 7 22 2 78] -> 76
