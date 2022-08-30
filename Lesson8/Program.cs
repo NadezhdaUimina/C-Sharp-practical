@@ -187,7 +187,9 @@ Product(array1, array2);
 // массив размером 2 x 2 x 2
 // 12(0,0,0) 22(0,0,1)
 // 45(1,0,0) 53(1,0,1)
-    
+
+
+//  очень тяжело далась данная задача, мое личное решение  
 int[,,] CreateRandom3dArray(int num1, int num2, int num3) // трехмерный массив
 {  
     int size = num1*num2*num3;
@@ -198,7 +200,7 @@ int[,,] CreateRandom3dArray(int num1, int num2, int num3) // трехмерны�
     }
     for (int i = 0; i < array.Length; i++)
     {
-        for (int k = i +1; k < array.Length-1; k++)
+        for (int k = i +1; k < array.Length; k++)
         {
             if (array[i] == array[k])
             {
@@ -213,13 +215,45 @@ int[,,] CreateRandom3dArray(int num1, int num2, int num3) // трехмерны�
     for(int i = 0; i < newArray.GetLength(0); i++)
     {
         for(int j = 0; j < newArray.GetLength(1); j++)
+        {
+            for(int k = 0; k < newArray.GetLength(2); k++)
             {
-                for(int k = 0; k < newArray.GetLength(2); k++)
-                {
-                    newArray[i, j, k] = array[z];
-                    z++;
-                }
+                newArray[i, j, k] = array[z];
+                z++;
             }
+        }
+    }
+    return newArray;
+}
+
+// решение подсказанное ребятами из чата    
+int[,,] CreateRandom3dArray2(int num1, int num2, int num3) // трехмерный массив
+{
+    int temp = 0;
+    int count = 0;
+    int[,,] newArray = new int[num1, num2, num3];
+    for(int i = 0; i < newArray.GetLength(0); i++)
+    {
+        for(int j = 0; j < newArray.GetLength(1); j++)
+        {
+            for(int k = 0; k < newArray.GetLength(2); k++)
+            {
+                temp = new Random().Next(10, 100);
+                for(int ii = 0; ii < newArray.GetLength(0); ii++)
+                {
+                    for(int jj = 0; jj < newArray.GetLength(1); jj++)
+                    {
+                        for(int kk = 0; kk < newArray.GetLength(2); kk++)
+                        {
+                            if(newArray[ii, jj, kk] != temp) count ++;
+                        }
+                    }
+                }
+                if (count == newArray.GetLength(0)*newArray.GetLength(1)*newArray.GetLength(2)) newArray[i, j, k] = temp;
+                else k--;
+                count =0;
+            }
+        }
     }
     return newArray;
 }
@@ -250,7 +284,8 @@ Console.Write("Введите размерность 3: ");
 int num3 = Convert.ToInt32(Console.ReadLine());
 int[,,] array = CreateRandom3dArray(num1, num2, num3);
 Show3dArray(array);
-
+int[,,] array2 = CreateRandom3dArray2(num1, num2, num3);
+Show3dArray(array2);
 
 
 // Заполните спирально массив 4 на 4.
