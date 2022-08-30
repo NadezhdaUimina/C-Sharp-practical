@@ -282,8 +282,10 @@ Console.Write("Введите размерность 2: ");
 int num2 = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите размерность 3: ");
 int num3 = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Первый вариант решения");
 int[,,] array = CreateRandom3dArray(num1, num2, num3);
 Show3dArray(array);
+Console.WriteLine("Второй вариант решения");
 int[,,] array2 = CreateRandom3dArray2(num1, num2, num3);
 Show3dArray(array2);
 
